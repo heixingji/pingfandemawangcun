@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马王村</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.quanbu {
+    background-color: #f3f5f7;
+}
+
+body {
+    background-color: #f3f5f7
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    height: 42px;
+    width: 1200px;
+    margin: 32px auto;
+}
+
+.logo {
+    width: 198px;
+    height: 42px;
+    float: left;
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+
+.search {
+    height: 42px;
+    width: 412px;
+    float: left;
+    margin: 0 10px;
+}
+
+.search input {
+    width: 345px;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    font-size: 14px;
+    color: grey;
+    padding-left: 15px;
+    float: left;
+}
+
+.search button {
+    width: 50px;
+    height: 40px;
+    background-color: blue;
+    border: 0;
+    float: left;
+}
+
+.yunghu {
+    height: 42px;
+    width: 60px;
+    float: left;
+}
+
+.yunghu img {
+    padding-left: 30px;
+    float: left;
+    margin-top: 6px;
+}
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height: 420px;
+    background: url(../images/banner2.png) no-repeat top center;
+}
+
+.banner .subnav {
+    float: left;
+    width: 190px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.banner .subnav ul li a {
+    display: block;
+    float: left;
+    width: 190px;
+    font-size: 14px;
+    color: #fff;
+    padding-top: 24px;
+}
+
+.banner .subnav ul li span {
+    display: block;
+    float: right;
+}
+
+.banner .subnav ul li a:hover {
+    color: #00a4ff;
+}
+
+.banner .kechenbiao {
+    float: right;
+    background-color: #fff;
+    height: 300px;
+    width: 230px;
+    margin-top: 50px;
+}
+
+.banner .kechenbiao .a {
+    height: 50px;
+    font-size: 18px;
+    background-color: #9bceea;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+
+.banner .kechenbiao h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.kechenbiao .b {
+    padding: 0 20px;
+}
+
+.kechenbiao ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.kechenbiao p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.kechenbiao .more {
+    display: block;
+    border: 1px solid #00a4ff;
+    width: 190px;
+    height: 40px;
+    color: #00a4ff;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+}
+
+.daohanglan {
+    height: 60px;
+    box-shadow: 0 1px 3px 3px rgba(0, 0, 0, 0.1);
+    border-color: #fff;
+    margin: auto;
+    width: 1200px;
+    margin-top: 10px;
+}
+
+.daohanglan .a {
+    float: left;
+    color: #00a4ff;
+    width: 136px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.daohanglan .c {
+    display: block;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    width: 125px;
+    color: #000;
+}
+
+.daohanglan .c span {
+    margin-right: 40px;
+    color: #a5a5a5;
+}
+
+.daohanglan .b {
+    width: 68px;
+    display: block;
+    float: right;
+    font-size: 14px;
+    color: #00a4ff;
+    margin-right: 30px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.quan {
+    background-color: #f3f5f7;
+}
+
+.tuijian {
+    height: 600px;
+    width: 1200px;
+    padding: 22px 0;
+    margin: 0 auto;
+}
+
+.tuijian .daohang {
+    padding-bottom: 20px;
+}
+
+.tuijian .daohang span {
+    font-size: 20px;
+
+}
+
+.tuijian .daohang a {
+    width: 60px;
+    display: block;
+    float: right;
+    margin-right: 34px;
+    font-size: 12px;
+}
+
+.tuijian .a {
+    height: 600px;
+    width: 1200px;
+
+}
+
+.tuijian ul li>img {
+    height: 156px;
+    width: 230px;
+
+}
+
+.tuijian ul li em {
+    top: 4px;
+    right: -4px;
+    position: absolute;
+}
+
+.tuijian ul li {
+    margin-right: 10px;
+    width: 230px;
+    height: 270px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    float: left;
+    position: relative;
+}
+
+.tuijian ul li .mowei {
+    width: 230px;
+    height: 270px;
+    background-color: #fff;
+    float: left;
+}
+
+.tuijian .a ul li h4 {
+    display: block;
+    padding: 20px 15px;
+    font-size: 15px;
+    color: #000;
+
+}
+
+.tuijian .a ul li .d {
+    padding: 0 12px;
+    color: #a5a5a5;
+}
+
+.tuijian .a ul li .b {
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.tuijian .a ul li .c {
+    color: #ff7c2d;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.rumen {
+    width: 1200px;
+    height: 440px;
+    margin: 0 auto;
+}
+
+.rumen .daohang {
+    width: 1200px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0 auto;
+}
+
+.rumen .daohang .qian {
+    font-size: 20px;
+    color: #494949;
+    line-height: 64px;
+    float: left;
+}
+
+
+.rumen .daohang .zhong {
+    text-align: center;
+    font-size: 16px;
+    color: #868686;
+    padding: 0 30px;
+    line-height: 64px;
+    float: left;
+}
+
+.rumen .daohang .hou {
+    font-size: 12px;
+    color: #a5a5a5;
+    padding: 0 30px 0 300px;
+    line-height: 64px;
+    float: right;
+}
+
+.rumen .daohang .zhong:hover {
+    color: #66bcfd;
+}
+
+.rumen .daohang .z {
+    font-size: 16px;
+    color: #868686;
+    padding: 0 30px 0 360px;
+    line-height: 64px;
+    float: left;
+}
+
+.rumen .daohang .z:hover {
+    color: #66bcfd;
+}
+
+.rumen .neirun {
+    width: 1200px;
+    height: 370px;
+    float: left;
+}
+
+.rumen .neirun .n {
+    padding: 50px 38px;
+    width: 170px;
+    height: 290px;
+}
+
+.rumen .neirun .zuo h4 {
+    font-size: 18px;
+    color: #fff;
+
+}
+
+.rumen .neirun .zuo .xia {
+    padding-top: 50px;
+}
+
+.rumen .neirun .zuo .n {
+    background-image: url(../images/zuo.png);
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 270px;
+}
+
+.rumen .neirun .zuo .xia img {
+    float: left;
+}
+
+.rumen .neirun .zuo {
+    float: left;
+}
+
+.rumen .neirun .zuo .xia span {
+    display: block;
+    height: 15px;
+    width: 170px;
+    padding-bottom: 50px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.rumen .neirun .youshang {
+    width: 954px;
+    height: 100px;
+    float: right;
+}
+
+/* .rumen .youxia {
+    height: 600px;
+    width: 1200px;
+
+} */
+
+.rumen ul li .img {
+    height: 156px;
+    width: 100%;
+
+}
+
+.rumen ul .h {
+    margin-right: 11px;
+    width: 230px;
+    height: 260px;
+    background-color: #fff;
+    margin-top: 10px;
+    float: left;
+
+}
+
+.rumen ul li .mowei {
+    width: 230px;
+    height: 270px;
+    background-color: #fff;
+    float: left;
+}
+
+.rumen .youxia ul li h4 {
+    display: block;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #000;
+
+}
+
+.rumen .youxia ul li .d {
+    padding: 0 12px;
+    color: #a5a5a5;
+}
+
+.rumen .youxia ul li .b {
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.rumen .youxia ul li .c {
+    color: #ff7c2d;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.rumen .youxia .z {
+
+    width: 230px;
+    height: 260px;
+    background-color: #fff;
+    margin-top: 10px;
+    float: right;
+}
+
+.fenxi {
+    width: 1200px;
+    height: 440px;
+    margin: 0 auto;
+}
+
+.fenxi .daohang {
+    width: 1200px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0 auto;
+}
+
+.fenxi .daohang .qian {
+    font-size: 20px;
+    color: #494949;
+    line-height: 64px;
+    float: left;
+}
+
+
+.fenxi .daohang .zhong {
+    text-align: center;
+    font-size: 16px;
+    color: #868686;
+    padding: 0 30px;
+    line-height: 64px;
+    float: left;
+}
+
+.fenxi .daohang .hou {
+    font-size: 12px;
+    color: #a5a5a5;
+    padding: 0 30px 0 300px;
+    line-height: 64px;
+    float: right;
+}
+
+.fenxi .daohang .zhong:hover {
+    color: #66bcfd;
+}
+
+.fenxi .daohang .z {
+    font-size: 16px;
+    color: #868686;
+    padding: 0 30px 0 360px;
+    line-height: 64px;
+    float: left;
+}
+
+.fenxi .daohang .z:hover {
+    color: #66bcfd;
+}
+
+.fenxi .neirun {
+    width: 1200px;
+    height: 370px;
+    float: left;
+}
+
+.fenxi .neirun .n {
+    padding: 50px 38px;
+    width: 170px;
+    height: 290px;
+}
+
+.fenxi .neirun .zuo h4 {
+    font-size: 18px;
+    color: #fff;
+
+}
+
+.fenxi .neirun .zuo .xia {
+    padding-top: 50px;
+}
+
+.fenxi .neirun .zuo .n {
+    background-image: url(../images/diandian.png);
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 270px;
+}
+
+.fenxi .neirun .zuo .xia img {
+    float: left;
+}
+
+.fenxi .neirun .zuo {
+    float: left;
+}
+
+.fenxi .neirun .zuo .xia span {
+    display: block;
+    height: 15px;
+    width: 170px;
+    padding-bottom: 50px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.fenxi .neirun .youshang {
+    width: 954px;
+    height: 100px;
+    float: right;
+}
+
+/* .rumen .youxia {
+    height: 600px;
+    width: 1200px;
+
+} */
+
+.fenxi ul li .img {
+    height: 156px;
+    width: 100%;
+
+}
+
+.fenxi ul .h {
+    margin-right: 11px;
+    width: 230px;
+    height: 260px;
+    background-color: #fff;
+    margin-top: 10px;
+    float: left;
+
+}
+
+.fenxi ul li .mowei {
+    width: 230px;
+    height: 270px;
+    background-color: #fff;
+    float: left;
+}
+
+.fenxi .youxia ul li h4 {
+    display: block;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #000;
+
+}
+
+.fenxi .youxia ul li .d {
+    padding: 0 12px;
+    color: #a5a5a5;
+}
+
+.fenxi .youxia ul li .b {
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.fenxi .youxia ul li .c {
+    color: #ff7c2d;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.fenxi .youxia .z {
+
+    width: 230px;
+    height: 260px;
+    background-color: #fff;
+    margin-top: 10px;
+    float: right;
+}
+
+.jiqie {
+    width: 1200px;
+    height: 440px;
+    margin: 0 auto;
+}
+
+.jiqie .daohang {
+    width: 1200px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0 auto;
+}
+
+.jiqie .daohang .qian {
+    font-size: 20px;
+    color: #494949;
+    line-height: 64px;
+    float: left;
+}
+
+
+.jiqie .daohang .zhong {
+    text-align: center;
+    font-size: 16px;
+    color: #868686;
+    padding: 0 30px;
+    line-height: 64px;
+    float: left;
+}
+
+.jiqie .daohang .hou {
+    font-size: 12px;
+    color: #a5a5a5;
+    padding: 0 30px 0 100px;
+    line-height: 64px;
+    float: right;
+}
+
+.jiqie .daohang .zhong:hover {
+    color: #66bcfd;
+}
+
+.jiqie .daohang .z {
+    font-size: 16px;
+    color: #868686;
+    padding: 0 30px 0 320px;
+    line-height: 64px;
+    float: left;
+}
+
+.jiqie .daohang .z:hover {
+    color: #66bcfd;
+}
+
+.jiqie .a {
+    height: 300px;
+    width: 1200px;
+
+}
+
+.jiqie ul li .img {
+    height: 156px;
+    width: 230px;
+
+}
+
+.jiqie ul li {
+    margin-right: 10px;
+    width: 230px;
+    height: 270px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    float: left;
+
+}
+
+.jiqie ul li .mowei {
+    width: 230px;
+    height: 270px;
+    background-color: #fff;
+    float: left;
+}
+
+.jiqie .a ul li h4 {
+    display: block;
+    padding: 20px 15px;
+    font-size: 15px;
+    color: #000;
+
+}
+
+.jiqie .a ul li .d {
+    padding: 0 12px;
+    color: #a5a5a5;
+}
+
+.jiqie .a ul li .b {
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.jiqie .a ul li .c {
+    color: #ff7c2d;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.kaifa {
+    width: 1200px;
+    height: 440px;
+    margin: 0 auto;
+}
+
+.kaifa .daohang {
+    width: 1200px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0 auto;
+}
+
+.kaifa .daohang .qian {
+    font-size: 20px;
+    color: #494949;
+    line-height: 64px;
+    float: left;
+}
+
+
+.kaifa .daohang .zhong {
+    text-align: center;
+    font-size: 16px;
+    color: #868686;
+    padding: 0 30px;
+    line-height: 64px;
+    float: left;
+}
+
+.kaifa .daohang .hou {
+    font-size: 12px;
+    color: #a5a5a5;
+    padding: 0 30px 0 100px;
+    line-height: 64px;
+    float: right;
+}
+
+.kaifa .daohang .zhong:hover {
+    color: #66bcfd;
+}
+
+.kaifa .daohang .z {
+    font-size: 16px;
+    color: #868686;
+    padding: 0 30px 0 320px;
+    line-height: 64px;
+    float: left;
+}
+
+.kaifa .daohang .z:hover {
+    color: #66bcfd;
+}
+
+.kaifa .a {
+    height: 300px;
+    width: 1200px;
+
+}
+
+.kaifa ul li .img {
+    height: 156px;
+    width: 230px;
+
+}
+
+.kaifa ul li {
+    margin-right: 10px;
+    width: 230px;
+    height: 270px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    float: left;
+
+}
+
+.kaifa ul li .mowei {
+    width: 230px;
+    height: 270px;
+    background-color: #fff;
+    float: left;
+}
+
+.kaifa .a ul li h4 {
+    display: block;
+    padding: 20px 15px;
+    font-size: 15px;
+    color: #000;
+
+}
+
+.kaifa .a ul li .d {
+    padding: 0 12px;
+    color: #a5a5a5;
+}
+
+.kaifa .a ul li .b {
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.kaifa .a ul li .c {
+    color: #ff7c2d;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.jiewei {
+    background-color: #fff !important;
+    height: 420px;
+    width: 1472px;
+    position: absolute;
+    left: 0;
+}
+
+.zong {
+    background-color: #fff;
+}
+
+.jiewei .a {
+    width: 550px;
+    height: 250px;
+    float: left;
+}
+
+.jiewei .a a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.jiewei .a span {
+    display: block;
+    padding-left: 22px;
+    font-size: 12px;
+
+}
+
+.jiewei .a img {
+    margin-left: 22px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.jiewei .b {
+    background-color: #fff;
+    padding-right: 30px;
+    padding-left: 50px;
+    margin-top: 20px;
+    float: right;
+}
+
+.jiewei .b dt {
+    font-size: 16px;
+    color: #a5a5a5;
+    padding-bottom: 10px;
+}
+
+.jiewei .b dd {
+    font-size: 12px;
+    color: #000;
+}
+
+.jiewei .c {
+    background-color: #fff;
+    padding-right: 120px;
+    padding-left: 120px;
+    margin-top: 20px;
+
+
+}
+
+.jiewei .c dt {
+    font-size: 16px;
+    color: #a5a5a5;
+    padding-bottom: 10px;
+}
+
+.jiewei .c dd {
+    font-size: 12px;
+    color: #000;
+}
+    </style>
+</head>
+
+<body>
+    <!-- 头部部分 -->
+    <div class="header clearfix">
+        <!-- logo部分 -->
+        <div class="logo">
+            <img src="../images/logo.png" />
+        </div>
+        <!-- 导航栏部分 -->
+        <div class="nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">课程</a></li>
+                <li><a href="#">职业规划</a></li>
+            </ul>
+        </div>
+        <!-- 搜索框 -->
+        <div class="search">
+            <input type="text" value="输入关键词">
+            <button>
+                <img src="../images/search.png" />
+            </button>
+        </div>
+        <div class="yunghu">
+            <img src="../images/yunghu.png" />
+        </div>
+    </div>
+    <!-- banner部分 -->
+    <div class="banner clearfix">
+        <!-- 出现错误图片出不来由于写一次要同时保存css和html -->
+        <div class="w">
+            <div class="subnav">
+                <ul>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">后端开发<span>></span></a></li>
+                    <li><a href="#">移动开发<span>></span></a></li>
+                    <li><a href="#">人工智能<span>></span></a></li>
+                    <li><a href="#">商业预测<span>></span></a></li>
+                    <li><a href="#">云计算&大数据<span>></span></a></li>
+                    <li><a href="#">运维&从测试<span>></span></a></li>
+                    <li><a href="#">UI设计<span>></span></a></li>
+                    <li><a href="#">产品<span>></span></a></li>
+                </ul>
+            </div>
+            <div class="kechenbiao">
+                <div class="a">我的课程表</div>
+                <div class="b">
+                    <ul>
+                        <li>
+                            <h4>继续学习 程序语言设计</h4>
+                            <p>正在学习-使用对象</p>
+                        </li>
+
+
+                        <li>
+                            <h4>继续学习 程序语言设计</h4>
+                            <p>正在学习-使用对象</p>
+                        </li>
+
+
+                        <li>
+                            <h4>继续学习 程序语言设计</h4>
+                            <p>正在学习-使用对象</p>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="more">全部课程</a>
+                </div>
+            </div>
+        </div>
+        <div class="quan">
+            <div class="daohanglan">
+                <div class="a">精品推荐</div>
+                <a class="c" href="#"><span>|</span>JQuery</a>
+                <a class="c" href="#"><span>|</span>Spark</a>
+                <a class="c" href="#"><span>|</span>MySQL</a>
+                <a class="c" href="#"><span>|</span>JavaWeb</a>
+                <a class="c" href="#"><span>|</span>MySQL</a>
+                <a class="c" href="#"><span>|</span>JavaWeb</a>
+                <a class="b" href="#">修改兴趣</a>
+            </div>
+
+            <div class="tuijian clearfix">
+                <div class="daohang">
+                    <span class="tou">精品推荐</span>
+                    <a href="#">查看全部</a>
+                </div>
+                <div class="a">
+                    <a href="#">
+                        <ul>
+                            <li>
+                                <em>
+                                    <img src="../images/hot.png">
+                                </em>
+                                <img src="../images/6(1).png" class="tu">
+                                <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li>
+                                <em>
+                                    <img src="../images/hot.png">
+                                </em>
+                                <img src="../images/7(1).png">
+                                <h4>Android网络图片加载框架详解</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li><img src="../images/3(1).png">
+                                <h4>Angular 2 最新框架+主流技术+项目实战</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li><img src="../images/5(1).png">
+                                <h4>Android Hybrid APP开发实战H5+原生！</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li class="mowei"><img src="../images/5(1).png">
+                                <h4>Android Hybrid APP开发实战H5+原生！</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li>
+                                <em>
+                                    <img src="../images/hot.png">
+                                </em>
+                                <img src="../images/6(1).png">
+                                <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li>
+                                <em>
+                                    <img src="../images/hot.png">
+                                </em>
+                                <img src="../images/7(1).png">
+                                <h4>Android网络图片加载框架详解</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li><img src="../images/3(1).png">
+                                <h4>Angular 2 最新框架+主流技术+项目实战</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li><img src="../images/5(1).png">
+                                <h4>Android Hybrid APP开发实战H5+原生！</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li class="mowei"><img src="../images/5(1).png">
+                                <h4>Android Hybrid APP开发实战H5+原生！</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="rumen">
+            <div class="daohang">
+                <div class="qian">编程入门</div>
+                <div class="z">热门</div>
+                <div class="zhong">初级</div>
+                <div class="zhong">中级</div>
+                <div class="zhong">高级</div>
+                <div class="hou"><a href="#">查看更多</a></div>
+            </div>
+            <div class="neirun">
+                <div class="zuo">
+                    <div class="n">
+                        <h4>PHP入门 ：</h4>
+                        <h4>基础语法到实际运用</h4>
+                        <div class="xia">
+                            <img src="../images/dian.png">
+                            <span><img src="../images/yuan.png">零基础入门 ： 语法与界</span>
+                            <span><img src="../images/yuan.png">进阶 ： 网络与数据缓存</span>
+                            <span><img src="../images/yuan.png">界面到数据存储</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="youshang">
+                    <img class="" src="../images/youshang.png">
+                </div>
+                <div class="youxia">
+                    <a href="#">
+                        <ul>
+                            <li class="h"><img src="../images/rumen1(1).png">
+                                <h4>Angular Hybrid APP开发实战H5+原生！</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li class="h"><img src="../images/rumen2(1).png">
+                                <h4>Kami2首页界面切换效果</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li class="h"><img src="../images/rumen3(1).png">
+                                <h4>Unity Profiler入门</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li class="z"><img src="../images/rumen4(1).png">
+                                <h4>Cocos2d-x 引擎源码中的纹理优化</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="fenxi clearfix">
+            <div class="daohang">
+                <div class="qian">数据分析师</div>
+                <div class="z">热门</div>
+                <div class="zhong">初级</div>
+                <div class="zhong">中级</div>
+                <div class="zhong">高级</div>
+                <div class="hou"><a href="#">查看更多</a></div>
+            </div>
+            <div class="neirun clearfix">
+                <div class="zuo">
+                    <div class="n">
+                        <h4>PHP入门 ：</h4>
+                        <h4>基础语法到实际运用</h4>
+                        <div class="xia">
+                            <img src="../images/dian.png">
+                            <span><img src="../images/yuan.png">零基础入门 ： 语法与界</span>
+                            <span><img src="../images/yuan.png">进阶 ： 网络与数据缓存</span>
+                            <span><img src="../images/yuan.png">界面到数据存储</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="youshang">
+                    <img src="../images/diana.png">
+                </div>
+                <div class="youxia">
+
+                    <a href="#">
+                        <ul>
+                            <li class="h"><img src="../images/rumen2(1).png">
+                                <h4>Kami2首页界面切换效果</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li class="h"><img src="../images/rumen1(1).png">
+                                <h4>Angular Hybrid APP开发实战H5+原生！</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li class="h"><img src="../images/rumen4(1).png">
+                                <h4>Cocos2d-x 引擎源码中的纹理优化</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li class="z"><img src="../images/rumen3(1).png">
+                                <h4>Unity Profiler入门</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="jiqie clearfix">
+            <div class="daohang">
+                <div class="qian">学习机器工程师</div>
+                <div class="z">热门</div>
+                <div class="zhong">初级</div>
+                <div class="zhong">中级</div>
+                <div class="zhong">高级</div>
+                <div class="hou"><a href="#">查看更多</a></div>
+            </div>
+            <div class="a">
+                <a href="#">
+                    <ul>
+                        <li><img src="../images/rumen1(1).png">
+                            <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                            <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                        </li>
+                    </ul>
+                </a>
+                <a href="#">
+                    <ul>
+                        <li><img src="../images/rumen2(1).png">
+                            <h4>Android网络图片加载框架详解</h4>
+                            <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                        </li>
+                    </ul>
+                </a>
+                <a href="#">
+                    <ul>
+                        <li><img src="../images/rumen4(1).png">
+                            <h4>Angular 2 最新框架+主流技术+项目实战</h4>
+                            <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                        </li>
+                    </ul>
+                </a>
+                <a href="#">
+                    <ul>
+                        <li><img src="../images/rumen5(1).png">
+                            <h4>Android Hybrid APP开发实战H5+原生！</h4>
+                            <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                        </li>
+                    </ul>
+                </a>
+                <a href="#">
+                    <ul>
+                        <li class="mowei"><img src="../images/rumen3(1).png">
+                            <h4>Android Hybrid APP开发实战H5+原生！</h4>
+                            <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <div class="kaifa clearfix">
+                <div class="daohang">
+                    <div class="qian">前端开发工程师</div>
+                    <div class="z">热门</div>
+                    <div class="zhong">初级</div>
+                    <div class="zhong">中级</div>
+                    <div class="zhong">高级</div>
+                    <div class="hou"><a href="#">查看更多</a></div>
+                </div>
+                <div class="a">
+                    <a href="#">
+                        <ul>
+                            <li><img src="../images/rumen1(1).png">
+                                <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li><img src="../images/rumen2(1).png">
+                                <h4>Android网络图片加载框架详解</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li><img src="../images/rumen4(1).png">
+                                <h4>Angular 2 最新框架+主流技术+项目实战</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li><img src="../images/rumen5(1).png">
+                                <h4>Android Hybrid APP开发实战H5+原生！</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <ul>
+                            <li class="mowei"><img src="../images/rumen3(1).png">
+                                <h4>Android Hybrid APP开发实战H5+原生！</h4>
+                                <span class="c">高级</span><span class="d">.</span><span class="b">1125人在线</span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+            <div class="jiewei">
+                <div class="c">
+                    <div class="a">
+                        <img src="../images/logo.png">
+                        <span>学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。
+                            © 2017年XTCG Inc.保留所有权利。-沪ICP备15025210号</span>
+                        <a href="#">
+                            下载APP
+                        </a>
+                    </div>
+                    <div class="b">
+                        <dl>
+                            <dt>合作伙伴</dt>
+                            <dd><a href="#">合作几个</a></dd>
+                            <dd><a href="#">合作导师</a></dd>
+                            </dt>
+                        </dl>
+                    </div>
+                    <div class="b">
+                        <dl>
+                            <dt>新手指南</dt>
+                            <dd><a href="#">如何注册</a></dd>
+                            <dd><a href="#">如何选课</a></dd>
+                            <dd><a href="#">如何拿到毕业证</a></dd>
+                            <dd><a href="#">学分是什么</a></dd>
+                            <dd><a href="#">考试未通过怎么办</a></dd>
+                            </dt>
+                        </dl>
+                    </div>
+
+                    <div class="b">
+                        <dl>
+                            <dt>关于学成网</dt>
+                            <dd><a href="#">关于</a></dd>
+                            <dd><a href="#">团队管理</a></dd>
+                            <dd><a href="#">工作机会</a></dd>
+                            <dd><a href="#">客服服务</a></dd>
+                            <dd><a href="#">帮助</a></dd>
+
+                        </dl>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
